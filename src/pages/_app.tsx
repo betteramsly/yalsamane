@@ -1,3 +1,4 @@
+import { MainLayout } from '@/shared/layouts'
 import type { AppProps } from 'next/app'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -8,7 +9,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         name="viewport"
         content="minimum-scale=1, initial-scale=1, width=device-width"
       />
-      <Component {...pageProps} />
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
     </div>
   )
 }

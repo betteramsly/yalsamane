@@ -1,6 +1,3 @@
-const IndexPage = () => {
-  return (
-    <div>IndexPage</div>
-  )
-}
-export default IndexPage
+import { HomeScreen } from '@/screens'
+
+export default HomeScreen
